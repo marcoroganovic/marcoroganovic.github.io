@@ -188,7 +188,7 @@ footer {
   }
 }
 
-@media(max-width: 414px) {
+@media(max-width: 568px) {
   
   body {
     font-size: 12px;

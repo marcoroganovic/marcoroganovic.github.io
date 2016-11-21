@@ -120,7 +120,7 @@ header {
 .about-me {
   max-width: 600px;
   width: 100%;
-  margin: 50px auto 0 auto;
+  margin: 50px auto 50px auto;
   overflow: hidden;
   text-align: center;
 }

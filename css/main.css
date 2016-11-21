@@ -64,6 +64,11 @@ header {
   color: lightgray;
 }
 
+.header-logo:hover {
+  cursor: pointer;
+}
+
+
 .header-nav {
   float: right;
   margin-top: 30px;
@@ -106,31 +111,28 @@ header {
 }
 
 .about-me {
-  padding: 40px 150px;
+  max-width: 600px;
+  width: 100%;
+  margin: 50px auto 0 auto;
   overflow: hidden;
   text-align: center;
 }
 
 .about-image {
-  max-width: 40%:
-  display: table;
-  float: left;
+  max-width: 30%:
+  margin: 0 auto;
 }
 
 .about-image img {
-  display: table-cell;
-  vertical-align: middle;
-  width: 35%;
-  margin-top: 31px;
-  margin-left: 55%;
+  display: block;
+  margin: 30px auto 0 auto;
+  width: 25%;
   border-radius: 50%;
 }
 
 .about-paragraph {
-  width: 60%;
-  float: right;
-  margin-top: 14px;
-  text-align: left;
+  margin-top: 25px;
+  text-align: center;
   color: #999;
 }
 
@@ -174,19 +176,8 @@ footer {
 
 
 @media(max-width: 768px) {
-  
-  .about-me {
-    padding: 10px;
-  }
-
-  .about-image {
-    max-width: 30%;
-    margin-top: 35px;
-  }
-
   .about-paragraph {
-    max-width: 65%;
-    margin-right: 50px;
+    padding: 0 20px;
   }
 }
 
@@ -194,31 +185,6 @@ footer {
   
   body {
     font-size: 12px;
-  }
-
-  .about-me {
-    padding: 40px 20px;
-  }
-
-  .about-image {
-    float: none;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .about-image img {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-  }
-
-  .about-paragraph {
-    display: block;
-    float: none;
-    max-width: 100%;
-    width: 100%;
-    margin: 0;
-    text-align: center;
   }
   
   .project-preview {

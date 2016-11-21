@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
+
+p {
+  font-weight: normal;
+}
+
+
 .button {
   padding: 10px 20px;
   color: white;

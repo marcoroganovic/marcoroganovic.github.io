@@ -28,6 +28,13 @@ p {
   border-radius: 20px;
 }
 
+.button:hover,
+.active {
+  background: white;
+  color: #333;
+  transition: color 0.8s ease-in;
+}
+
 .section-title {
   font-weight: 300;
   text-align: center;

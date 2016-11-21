@@ -38,6 +38,7 @@ p {
   width: 100%;
   margin: 0 auto;
   background: white;
+  box-shadow: 0 0 2px #999;
 }
 
 header {

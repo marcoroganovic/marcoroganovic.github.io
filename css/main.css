@@ -124,14 +124,14 @@ header {
   float: right;
   margin-top: 14px;
   text-align: left;
-  color: #333;
-  font-weight: 200;
+  color: #999;
 }
 
 .about-paragraph span {
   display: block;
   margin-top: 5px;
-  font-weight: 300;
+  color: #333;
+  font-weight: 400;
 }
 
 .projects {
@@ -142,7 +142,6 @@ header {
 
 .projects-desc {
   font-size: 16px;
-  font-weight: 200;
   color: #333;
 }
 

@@ -1,0 +1,229 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  font: normal 16px/150% "Lato", sans-serif;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.section-title {
+  font-weight: 300;
+  text-align: center;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+}
+
+header {
+  padding: 0 20px;
+  overflow: hidden;
+  background: royalblue;
+  color: white;
+}
+
+.header-top {
+  overflow: hidden;
+  clear: both;
+}
+
+.header-logo {
+  float: left;
+  display: inline-block;
+  padding: 10px;
+  font-family: "Exo", sans-serif;
+}
+
+.header-logo span {
+  color: lightgray;
+}
+
+.header-nav {
+  float: right;
+  margin-top: 25px;
+}
+
+.header-nav a {
+  padding: 10px;
+  color: white;
+}
+
+.header-slogan {
+  display: table;
+  margin: 50px auto 60px auto;
+}
+
+.header-slogan h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.header-slogan h1 span {
+  display: block;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.header-buttons {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 110px  auto;
+}
+
+.header-buttons .button {
+  margin-right: 10px;
+}
+
+.header-buttons .button:last-child {
+  margin-right: 0;
+}
+
+.about-me {
+  padding: 40px 150px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.about-image {
+  max-width: 40%:
+  display: table;
+  float: left;
+}
+
+.about-image img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 35%;
+  margin-top: 19px;
+  margin-left: 55%;
+  border-radius: 50%;
+}
+
+.about-paragraph {
+  width: 60%;
+  float: right;
+  margin-top: 14px;
+  text-align: left;
+  color: #333;
+  font-weight: 200;
+}
+
+.about-paragraph span {
+  display: block;
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+.projects {
+  padding: 40px 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.projects-desc {
+  font-size: 16px;
+  font-weight: 200;
+  color: #333;
+}
+
+.project-preview {
+  max-width: 45%;
+  float: left;
+  margin: 2.5%;
+}
+
+.project-preview img {
+  width: 100%;
+}
+
+
+
+footer {
+  width: 100%;
+  padding: 40px 10px;
+  background: royalblue;
+  color: #fff;
+  text-align: center;
+}
+
+
+@media(max-width: 768px) {
+  
+  .about-me {
+    padding: 10px;
+  }
+
+  .about-image {
+    max-width: 30%;
+    margin-top: 35px;
+  }
+
+  .about-paragraph {
+    max-width: 65%;
+    margin-right: 50px;
+  }
+}
+
+@media(max-width: 414px) {
+  
+  body {
+    font-size: 12px;
+  }
+
+  .about-me {
+    padding: 40px 20px;
+  }
+
+  .about-image {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-image img {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .about-paragraph {
+    display: block;
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .project-preview {
+    float: none;
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 320px) {
+  body {
+    font-size: 11px;
+  }
+}
+

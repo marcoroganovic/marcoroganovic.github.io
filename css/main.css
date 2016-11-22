@@ -162,20 +162,60 @@ header {
 }
 
 .project-preview {
-  max-width: 45%;
+  max-width: 46%;
   float: left;
-  margin: 2.5%;
+  margin: 2%;
 }
 
 .project-preview img {
   width: 100%;
 }
 
+.contact {
+  padding: 30px 40px;
+  overflow: hidden;
+  clear: both;
+}
+
+.contact-icons {
+  max-width: 270px;
+  width: 100%;
+  margin: 50px auto 20px auto;
+  overflow: hidden;
+}
+
+
+.contact-button {
+  display: table;
+  float: left;
+  padding: 10px 25px;
+  margin: 0 6px;
+  border: 1px solid royalblue;
+  border-radius: 20px;
+  text-decoration: none;
+  color: royalblue;
+}
+
+
+.icon {
+  display: table-cell;
+  vertical-align: middle;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.contact-button span {
+  float: right;
+  margin: 0 0 0 5px;
+}
 
 
 footer {
   width: 100%;
-  padding: 40px 10px;
+  margin-top: 20px;
+  padding: 20px 10px;
   background: royalblue;
   color: #fff;
   text-align: center;

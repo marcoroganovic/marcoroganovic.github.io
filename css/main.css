@@ -215,8 +215,8 @@ header {
 footer {
   width: 100%;
   margin-top: 20px;
-  padding: 20px 10px;
-  background: royalblue;
+  padding: 10px 10px;
+  background: gray;
   color: #fff;
   text-align: center;
 }
@@ -245,4 +245,3 @@ footer {
     font-size: 11px;
   }
 }
-

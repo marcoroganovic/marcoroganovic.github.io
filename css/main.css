@@ -239,6 +239,11 @@ footer {
     float: none;
     max-width: 100%;
   }
+
+  .icon {
+    margin-top: -2px;
+  }
+
 }
 
 @media(max-width: 320px) {

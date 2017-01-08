@@ -12,9 +12,18 @@ h1 {
 }
 
 a {
+  color: #333;
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+}
 
 p {
   font-weight: normal;
@@ -171,6 +180,20 @@ header {
   width: 100%;
 }
 
+.os-projects {
+  margin: 30px auto 0 auto;
+  max-width: 400px;
+}
+
+.os-projects li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.os-projects li:last-child {
+  border: none;
+}
+
 #contact {
   padding: 30px 40px;
   overflow: hidden;
@@ -216,7 +239,7 @@ header {
 footer {
   width: 100%;
   margin-top: 20px;
-  padding: 10px 10px;
+  padding: 5px 10px;
   background: #666;
   color: #fff;
   text-align: center;

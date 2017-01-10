@@ -276,7 +276,16 @@ footer {
   .about-paragraph {
     padding: 0 20px;
   }
-}
+
+  .row {
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .column {
+    max-width: 70%;
+    margin: 0 auto;
+  }
 
 @media(max-width: 568px) {
   

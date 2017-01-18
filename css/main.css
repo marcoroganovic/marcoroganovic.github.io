@@ -95,6 +95,7 @@ header {
 .header-slogan {
   display: table;
   margin: 50px auto 60px auto;
+  letter-spacing: 2.5px;
 }
 
 .header-slogan h1 {

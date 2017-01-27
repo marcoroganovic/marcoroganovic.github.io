@@ -216,6 +216,10 @@ header {
   transition: all 0.5s linear;
 }
 
+.os-projects-preview {
+  margin-top: 400px;
+}
+
 .os-projects {
   margin: 30px auto 0 auto;
   max-width: 420px;

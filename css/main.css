@@ -55,10 +55,24 @@ p {
 }
 
 header {
-  padding: 0 20px;
+  position: relative;
   overflow: hidden;
   background: royalblue;
   color: white;
+}
+
+#particles {
+  height: 400px;
+  background: royalblue;
+}
+
+
+.header-content {
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  margin: -400px 0 0 0;
+  padding: 0 20px;
 }
 
 .header-top {

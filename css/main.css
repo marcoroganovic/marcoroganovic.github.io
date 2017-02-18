@@ -330,6 +330,15 @@ footer {
 
 }
 
+@media(max-width: 400px) {
+  .header-logo,
+  .header-nav {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
 @media(max-width: 320px) {
   body {
     font-size: 12px;

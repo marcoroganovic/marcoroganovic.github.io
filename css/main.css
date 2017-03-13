@@ -328,6 +328,10 @@ footer {
     margin-top: -2px;
   }
 
+  .os-projects-preview {
+    margin-top: 50px;
+  }
+
   .contact-button {
     width: 40%;
     height: 40px;

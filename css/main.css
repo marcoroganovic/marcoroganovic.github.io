@@ -4,11 +4,11 @@ body {
   margin: 0;
   padding: 0;
   background: #efefef;
-  font: normal 16px/150% "Lato", sans-serif;
+  font: 300 16px/150% "Source Sans Pro", sans-serif;
 }
 
 h1 {
-  font-weight: 100;
+  font-weight: 600;
 }
 
 a {
@@ -23,7 +23,7 @@ ul {
 }
 
 p {
-  font-weight: normal;
+  font-weight: 300;
 }
 
 
@@ -120,7 +120,7 @@ header {
 
 .header-slogan h1 span {
   display: block;
-  font-weight: 300;
+  font-weight: 200;
   margin-top: 20px;
 }
 
@@ -254,7 +254,7 @@ header {
 }
 
 .contact-icons {
-  max-width: 410px;
+  max-width: 540px;
   width: 100%;
   margin: 30px auto 20px auto;
   overflow: hidden;

@@ -26,6 +26,16 @@ p {
   font-weight: 300;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .button {
   padding: 10px 20px;
@@ -139,11 +149,7 @@ header {
 }
 
 #about-me {
-  max-width: 600px;
-  width: 100%;
-  margin: 70px auto;
-  overflow: hidden;
-  text-align: center;
+  width: 45%;
 }
 
 .about-image {
@@ -172,33 +178,58 @@ header {
 }
 
 
-#technologies,
 #projects {
   padding: 70px 10px;
 }
 
 #technologies {
+  width: 47%;
   text-align: center;
 }
 
-.row {
+.row-custom {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  padding: 0 10px;
 }
 
 .column {
-  max-width: 30%;
+  display: block;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .column img {
-  width: 105px;
-  height: 105px;
-  max-width: 30%;
+  max-width: 75px;
+  display: inline;
+  float: left;
 }
 
 .column p {
-  color: #999;
+  width: 83%;
+  display: inline-block;
+  float: right;
+  text-align: left;
+}
+
+
+.column:nth-child(1) img,
+.column:nth-child(2) img,
+.column:nth-child(3) img {
+  position: relative;
+}
+
+.column:nth-child(1) img {
+  max-width: 70px;
+  top: 5px;
+}
+
+.column:nth-child(2) img {
+  top: 20px;
+}
+
+.column:nth-child(3) img {
+  top: 25px;
 }
 
 #projects {

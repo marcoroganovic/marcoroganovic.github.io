@@ -29,7 +29,7 @@ p {
 .border-divider {
   position: relative;
   background: transparent;
-  border-left: 100vw solid #207be4;
+  border-left: 1440px solid #207be4;
   border-bottom: 100px solid transparent;
 }
 

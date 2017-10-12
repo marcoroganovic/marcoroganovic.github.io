@@ -245,6 +245,7 @@ header {
 #projects {
   text-align: center;
   overflow: hidden;
+  clear: both;
 }
 
 .projects-desc {
@@ -257,13 +258,41 @@ header {
   margin: 2%;
 }
 
+
+.featured-project {
+  width: 90%;
+  margin: 3% 2%;
+  overflow: hidden;
+  clear: both;
+}
+
+
+.featured-project-image {
+  width: 60%;
+  float: left;
+}
+
+
+.featured-project-description {
+  width: 38%;
+  float: right;
+  text-align: left;
+}
+
+
+.featured-project-description h3 {
+  margin-top: 0;
+}
+
+.featured-project img,
 .project-preview img {
   width: 100%;
-  border: 1px solid #fff;
+  border: 2px solid #f1f1f1;
   box-shadow: 0 0 10px #999;
   opacity: 0.7;
 }
 
+.featured-project img:hover,
 .project-preview img:hover {
   opacity: 1;
   transition: all 0.5s linear;

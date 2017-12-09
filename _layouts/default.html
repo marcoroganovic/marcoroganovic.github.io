@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{ site.title }}</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,900|Open+Sans:300,400,700,800"
+    rel="stylesheet">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"
+    rel="stylesheet" />
+    <link href="/css/prism.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+		<main>
+			<header>
+				<div class="logo">
+					<a href="/">
+						<img src="http://acmelogos.com/images/logo-1.svg" />
+					</a>
+				</div>
+				<nav>
+					<a href="/">Home</a>
+					<a href="/blog.html">Blog</a>
+					<a href="/#about">About</a>
+					<a href="/#projects">Projects</a>
+					<a href="/#contact">Contact</a>
+				</nav>
+			</header>
+
+      {{ content }}
+
+      <footer>
+        <img src="/images/craft.svg" />
+        <small>
+          Designed and developed with help from open-source. All rights reserved.
+        </small>
+      </footer>
+
+    </main>
+    <script src="/js/prism.js"></script>
+  </body>
+</html>

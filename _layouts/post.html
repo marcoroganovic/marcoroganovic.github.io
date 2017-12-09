@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="blog-post-meta-info">
+  <h1>
+    <img src="/images/pen.svg" />
+    {{ page.title }}
+  </h1>
+
+  <p>{{ page.published }} | {{ page.readingtime }}</p>
+</div>
+
+<!-- blog-intro-meta end -->
+
+<div class="blog-post-desc bg-alternate">
+  <p>{{ page.description }}</p>
+</div>
+
+<!-- blog post desc end -->
+
+<div class="blog-post-content">
+  {{ content }}
+</div>
+
+<div class="blog-post-links bg-alternate">
+  <div class="previous-post">
+    <a href="">&larr; Previous post</a>
+  </div>
+
+  <div class="next-post">
+    <a href="">Next post &rarr;</a> 
+  </div>
+</div>

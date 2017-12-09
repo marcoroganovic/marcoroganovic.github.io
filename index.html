@@ -1,194 +1,144 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marco Roganovic | Full-Stack Developer and Web Designer</title>
-    
-    <!-- Fonts -->
+    <meta name="viewport" content="width=device-width" />
+    <title>Title</title>
     <link
-    href="https://fonts.googleapis.com/css?family=Exo:700|Source+Sans+Pro:200,300,400,600"
+    href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,900|Open+Sans:300,400,700,800"
+    rel="stylesheet">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"
     rel="stylesheet" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
 
-      <header>
-        <div id="particles"></div>
+		<main>
+			<header>
+				<div class="logo">
+					<a href="index.html">
+						<img src="http://acmelogos.com/images/logo-1.svg" />
+					</a>
+				</div>
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="blog.html">Blog</a>
+					<a href="index.html#about">About</a>
+					<a href="index.html#projects">Projects</a>
+					<a href="index.html#contact">Contact</a>
+				</nav>
+			</header>
+			
+			<section id="intro">
+				<h1>
+					<img src="https://image.flaticon.com/icons/svg/349/349356.svg" />Software Developer
+        </h1>
 
-        <div class="header-content">
-          <div class="header-top">
-            <h2 class="header-logo">Marco<span>R</span></h2>
-            
-            <nav class="header-nav">
-              <a href="/">Home</a>
-              <a href="/journal">Blog</a>
-              <a href="#projects">Portfolio</a>
-              <a href="#contact">Contact</a>
-            </nav>
-          </div>
+				<p>Crafting clean and pedant web and mobile projects, with focus on simplicity,
+        maintanability and performance.<br />Alongside that, always with keen
+        eye on design and user experience.</p>
+			</section>
+			
+			<section id="about" class="bg-alternate">
+				<h2><img src="https://image.flaticon.com/icons/svg/85/85836.svg" />About me</h2>
+				<div class="with-picture">
+					<img src="https://avatars0.githubusercontent.com/u/16259742?s=460&v=4" />
+					<p>Hi there, my name is Marco and I'm 21 years old software developer
+          from Montenegro, Europe. My interest span accross (maybe too) many
+          areas but beside programming and design I really enjoy reading,
+          working out, watching TED talks and football/soccer. Lately I've
+          started to dabble at writing so if you're interested in some
+          programming related topics check out <a href="blog.html">this</a> page.</p>
+				</div>
+			</section>
+			
+			<section id="projects" class="">
+				<h2>
+					<img src="https://image.flaticon.com/icons/svg/204/204112.svg" />
+					Projects
+				</h2>
+				<p>Below is a list of projects that I've worked on so far, for more
+        visit my GitHub profile</p>
+				
+				<div class="projects-grid">
+					<div class="featured-project">
+						<div class="browser-mockup">
+							<img src="https://marcoroganovic.github.io/images/abago.com.png" />
+						</div>
+						<div class="featured-project-desc">
+							<h3>abago.com</h3>
+							<p>Platform for booking flight tickets and soon hotels. It's a
+              single page application built using modern JavaScript libraries.
+              Specifically React, Redux, React Router and webpack for code
+              transpiling and module bundling. <a href="#"
+                class="ghost-btn">Visit site</a></p>
+						</div>
+					</div>
+					
+					<div class="other-projects">
+						<figure>
+							<img src="https://marcoroganovic.github.io/images/abago.com.png" />
+						</figure>
 
-          <div class="header-slogan">
-            <h1>Crafting clean and pleasant <span>web projects</span></h1>
-          </div>
+						<figure>
+							<img src="https://marcoroganovic.github.io/images/abago.com.png" />
+						</figure>
 
-          <div class="header-buttons">
-            <a name="about-me" href="#about-me" class="button">See more</a>
-            <a href="#contact" class="button active">Say Hi!</a>
-          </div>
-        </div>
-      </header>
+						<figure>
+							<img src="https://marcoroganovic.github.io/images/abago.com.png" />
+						</figure>
+					</div>
+				</div>
+			</section>
+			
+			<section id="contact" class="bg-alternate">
+				<h2>
+					<img src="https://image.flaticon.com/icons/svg/259/259624.svg" />
+					Contact
+				</h2>
+				<p>Feel free to reach out if you have any questions or just to say 'Hi'</p>
+				
+				<div class="contact-form">
+					<form>
+						<input type="text" name="name" placeholder="Your name..." />
+						<input type="email" name="email" placeholder="Your email address..." />
+						<input type="text" name="subject" placeholder="Subject" />
+						<textarea placeholder="Your message"></textarea>
+						<button>Send</button>
+					</form>
+				</div>
+				
+				<div class="contact-social">
+					<div class="contact-social-item">
+						<div class="github"></div>
+						<img src="https://image.flaticon.com/icons/svg/160/160161.svg" />
+						<span>GitHub</span>
+					</div>
+					
+					<div class="contact-social-item">
+						<div class="twitter"></div>
+						<img src="https://image.flaticon.com/icons/svg/220/220375.svg" />
+						<span>Twitter</span>
+					</div>
+					
+					
+					<div class="contact-social-item">
+						<div class="linkedin"></div>
+						<img src="https://image.flaticon.com/icons/svg/220/220343.svg" />
+						<span>LinkedIn</span>
+					</div>
+				</div>
+			</section>
 
-      <div class="border-divider"></div>
 
-      <div class="row">
-      <section id="about-me">
-        <h2 class="section-title">About me</h2>
-        <div class="about-image">
-          <img src="https://avatars1.githubusercontent.com/u/16259742?v=3&s=460"
-          />
-        </div>
-        
-        <div class="about-paragraph">
-          <p>Hi there, my name is Marco and I'm 21 years old web developer from
-          Montenegro, Europe. My interest span accross (maybe too) many areas but
-          beside programming and design I really enjoy reading,  working out,
-          watching TED Talks and football.
-          <span>Below you can find some things that I use in my work...</span>
-        </div>
-      </section>
+			<footer>
+				<img src="https://image.flaticon.com/icons/svg/640/640212.svg" />
+				<small>
+					Designed and developed with help from open-source. All rights reserved.
+				</small>
+			</footer>
+		</main>
 
-      <section id="technologies">
-        <h2 class="section-title">Technologies</h2>
-        <div class="row-custom">
-          <div class="column">
-            <img src="images/js_logo.svg" />
-            <p>JavaScript and its frameworks and libraries are cornerstone of
-            all my projects I simply love the
-            language and its ubiquity.</p>
-          </div>
-          <div class="column">
-            <img src="images/node_logo.svg" />
-            <p>When it comes to back-end of the application that really depends
-            on project but my preferred choice is Node powered by Express.</p>
-          </div>
-
-          <div class="column">
-            <img src="images/git_logo.svg" />
-            <p>Source control managment is one of the pillars of modern
-            application development and that's why I use git and gitflow
-            branching model.</p>
-          </div>
-      </div>
-      </section>
-      </div>
-
-      <section id="projects">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="featured-project">
-
-          <div class="featured-project-image">
-            <a href="https://abago.com" target="_blank">
-              <img src="images/abago.com.png" />
-            </a>
-          </div>
-
-          <div class="featured-project-description">
-            <h3>Abago.com</h3>
-            <p>Platform for booking flight tickets and soon hotels. It's a
-            single-page application built using modern JavaScript libraries.
-            Specifically React, Redux, React Router and Webpack for code
-            transpiling and module bundling.</p>
-          </div>
-        </div>
-
-        <div class="project-preview">
-          <a href="http://code-player.surge.sh" target="_blank"><img
-            src="images/code-player.png" /></a>
-        </div>
-
-        <div class="project-preview">
-          <a href="https://site-forge.herokuapp.com" target="_blank"><img
-            src="images/site-forge.png" /></a>
-        </div>
-
-        <div class="os-projects-preview">
-          <h3 class="section-title">Open-Source Contributions</h3>
-          <ul class="os-projects">
-            <li>
-              <a href="https://github.com/marcoroganovic/rooter.js">
-                Rooter.js: History-based Client-Side Router
-              </a>
-            </li>
-
-            <li>
-              <a href="https://github.com/marcoroganovic/asynh.js">
-                Asynh.js: AJAX requests made easy
-              </a>
-            </li>
-
-            <li>
-              <a href="https://github.com/marcoroganovic/autotype.js">
-                autotype.js: Tiny typing simulation library
-              </a>
-            </li>
-
-            <li>
-              <a href="https://github.com/marcoroganovic/jsHTML">
-                jsHTML: DOM tree with function calls
-              </a>
-            </li>
-         </ul>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2 class="section-title">Contact</h2>
-        <p>You can find me here, so say hi!</p>
-        <div class="contact-icons">
-          <a href="https://github.com/marcoroganovic" class="contact-button"
-            target="_blank">
-            <img src="images/github-logo.svg" class="icon"/>
-            <span>GitHub</span>
-          </a>
-          <a href="mailto:marcoroganovic@gmail.com" class="contact-button">
-            <img src="images/envelope.svg" class="icon"/>
-            <span>Email</span>
-          </a>
-          <a href="https://twitter.com/marcoroganovic" class="contact-button"
-            target="_blank">
-            <img src="images/twitter-icon.svg" class="icon" />
-            <span>Twitter</span>
-          </a>
-          <a href="https://linkedin.com/in/markoroganovic" class="contact-button"
-            target="_blank">
-            <img src="images/linkedin-icon.svg" class="icon" />
-            <span>LinkedIn</span>
-          </a>
-        </div>
-      </section>
-
-      <footer>
-        <p>Marco Roganovic, Copyright &copy; 2017</p>
-      </footer>
-    </div>
-
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
-     Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-90855947-1', 'auto');
-    ga('send', 'pageview');
-
-    </script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/app.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sotfware Developer and aspiring designer
+title: Marco Roganovic | Sotfware Developer and aspiring Designer
 ---
 
 <section id="intro">
@@ -22,7 +22,7 @@ title: Sotfware Developer and aspiring designer
     areas but beside programming and design I really enjoy reading,
     working out, watching TED talks and football/soccer. Lately I've
     started to dabble at writing so if you're interested in some
-    programming related topics check out <a href="blog.html">this</a> page.</p>
+    programming related topics check out <a href="/blog">this</a> page.</p>
   </div>
 </section>
 
@@ -51,15 +51,15 @@ title: Sotfware Developer and aspiring designer
     
     <div class="other-projects">
       <figure>
-        <img src="/images/code-player.png" />
+        <img src="/images/abago.com.png" alt="abago.com"/>
       </figure>
 
       <figure>
-        <img src="/images/site-forge.png" />
+        <img src="/images/code-player.png" alt="code-player.surge.sh" />
       </figure>
 
       <figure>
-        <img src="/images/site-forge.png" />
+        <img src="/images/site-forge.png" alt="site-forge.herokuapp.com" />
       </figure>
     </div>
   </div>
@@ -83,23 +83,30 @@ title: Sotfware Developer and aspiring designer
   </div>
   
   <div class="contact-social">
-    <div class="contact-social-item">
-      <div class="github"></div>
-      <img src="/images/github.svg" />
-      <span>GitHub</span>
-    </div>
-    
-    <div class="contact-social-item">
-      <div class="twitter"></div>
-      <img src="/images/twitter.svg" />
-      <span>Twitter</span>
-    </div>
-    
-    
-    <div class="contact-social-item">
-      <div class="linkedin"></div>
-      <img src="/images/linkedin.svg" />
-      <span>LinkedIn</span>
-    </div>
+    <a href="https://github.com/{{ site.social.github }}" target="_blank">
+      <div class="contact-social-item">
+        <div class="github"></div>
+        <img src="/images/github.svg" />
+        <span>GitHub</span>
+      </div>
+    </a>
+
+    <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank">
+      <div class="contact-social-item">
+        <div class="twitter"></div>
+        <img src="/images/twitter.svg" />
+        <span>Twitter</span>
+      </div>
+    </a>
+   
+    <a href="https://linkedin.com/in/{{ site.social.linkedin }}"
+      target="_blank">
+      <div class="contact-social-item">
+        <div class="linkedin"></div>
+        <img src="/images/linkedin.svg" />
+        <span>LinkedIn</span>
+      </div>
+    </a>
+
   </div>
 </section>

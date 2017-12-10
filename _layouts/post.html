@@ -8,7 +8,10 @@ layout: default
     {{ page.title }}
   </h1>
 
-  <p>{{ page.published }} | {{ page.readingtime }}</p>
+  <p>
+    {{ page.date | date: '%b %d, %Y' }} | 
+    {{ page.content | number_of_words | divided_by: 180 }} Minute Read
+  </p>
 </div>
 
 <!-- blog-intro-meta end -->
@@ -23,12 +26,20 @@ layout: default
   {{ content }}
 </div>
 
+{% if page.previous.url or page.next.url %}
 <div class="blog-post-links bg-alternate">
+
   <div class="previous-post">
-    <a href="">&larr; Previous post</a>
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url }}">&larr; Previous post</a>
+  {% endif %}
   </div>
 
   <div class="next-post">
-    <a href="">Next post &rarr;</a> 
+  {% if page.next.url %}
+    <a href="{{ page.next.url }}">Next post &rarr;</a> 
+  {% endif %}
   </div>
+
 </div>
+{% endif %}

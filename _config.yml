@@ -1,1 +1,12 @@
 name: Marco Roganovic | Software developer and aspiring designer
+permalink: /blog/:title 
+plugins: [jekyll-paginate]
+paginate: 6
+paginate_path: /blog/page/:num
+
+social:
+  github: marcoroganovic
+  twitter: marcoroganovic
+  linkedin: markoroganovic
+
+ga_id: UA-90855947-1

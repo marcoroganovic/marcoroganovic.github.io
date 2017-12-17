@@ -1,4 +1,4 @@
-App.module.define("mail", [], function() {
+App.module.define("mail", ["modal"], function(modal) {
 
   function formatData(data) {
     var accumulator = "";
@@ -17,9 +17,9 @@ App.module.define("mail", [], function() {
 
     xhr.onreadystatechange = function() {
       if(this.status === 200 && this.readyState === 4) {
-        alert("Sent!");
+        modal.show("Message sent!");
       } else if(this.stats === 404) {
-        alert("Failed!");
+        modal.show("Mesage not sent, try again later!");
       }
     }
 

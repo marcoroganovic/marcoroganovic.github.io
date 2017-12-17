@@ -10,7 +10,9 @@
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"
     rel="stylesheet" />
-    <link href="/css/prism.css" rel="stylesheet">
+    {% if page.include_blog_script %}
+      <link href="/css/prism.css" rel="stylesheet">
+    {% endif %}
     <link href="/css/styles.css" rel="stylesheet">
   </head>
   <body>
@@ -35,7 +37,7 @@
       <footer>
         <img src="/images/craft.svg" />
         <small>
-          Designed and developed with help from open-source. All rights reserved.
+          Designed and developed with help from open-source. &#9889; 
         </small>
       </footer>
 
@@ -51,7 +53,17 @@
       ga('create', '{{ site.ga_id }}', 'auto');
       ga('send', 'pageview');
     </script>
-
-    <script src="/js/prism.js"></script>
+    {% if page.include_blog_script %}
+      <script src="/js/prism.js"></script>
+    {% endif %}
+    {% if page.homepage_script %}
+      <script src="/js/shell.js"></script> 
+      <script src="/js/dom.js"></script>
+      <script src="/js/projects.js"></script>
+      <script src="/js/contact.js"></script>
+      <script>
+        App.init();
+      </script>
+    {% endif %}
   </body>
 </html>

@@ -10,7 +10,7 @@
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"
     rel="stylesheet" />
-    <link href="/css/prism.css" rel="stylesheet">
+    
     <link href="/css/styles.css" rel="stylesheet">
   </head>
   <body>
@@ -78,15 +78,17 @@
     
     <div class="other-projects">
       <figure>
-        <img src="/images/abago.com.png" alt="abago.com"/>
+        <img src="/images/abago.com.png" alt="abago.com" data-project-id="abago" />
       </figure>
 
       <figure>
-        <img src="/images/code-player.png" alt="code-player.surge.sh" />
+        <img src="/images/code-player.png" alt="code-player.surge.sh"
+        data-project-id="codeplayer" />
       </figure>
 
       <figure>
-        <img src="/images/site-forge.png" alt="site-forge.herokuapp.com" />
+        <img src="/images/site-forge.png" alt="site-forge.herokuapp.com"
+        data-project-id="siteforge" />
       </figure>
     </div>
   </div>
@@ -142,7 +144,7 @@
       <footer>
         <img src="/images/craft.svg" />
         <small>
-          Designed and developed with help from open-source. All rights reserved.
+          Designed and developed with help from open-source. &#9889; 
         </small>
       </footer>
 
@@ -158,7 +160,15 @@
       ga('create', 'UA-90855947-1', 'auto');
       ga('send', 'pageview');
     </script>
-
-    <script src="/js/prism.js"></script>
+    
+    
+      <script src="/js/shell.js"></script> 
+      <script src="/js/dom.js"></script>
+      <script src="/js/projects.js"></script>
+      <script src="/js/contact.js"></script>
+      <script>
+        App.init();
+      </script>
+    
   </body>
 </html>

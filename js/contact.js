@@ -1,4 +1,4 @@
-App.module.define("contact", ["dom"], function(dom) {
+App.module.define("contact", ["dom", "mail"], function(dom, mail) {
 
   // Cache DOM elements
   var $nameInput = dom.$("input[name='name']");
@@ -65,6 +65,7 @@ App.module.define("contact", ["dom"], function(dom) {
       // and find some API mail sending service
       // also show user some pop-up for letting
       // him know that message is sent
+      mail.send(message);
     }
   });
 

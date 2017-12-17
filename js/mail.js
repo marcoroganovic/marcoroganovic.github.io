@@ -12,18 +12,22 @@ App.module.define("mail", ["modal"], function(modal) {
 
   function send(mail) {
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://marco-portfolio-mailer.herokuapp.com/mail");
-    xhr.setRequestHeader("Content-Type", "application/json");
+    return new Promise(function(resolve, reject) {
+      xhr.open("POST", "https://marco-portfolio-mailer.herokuapp.com/mail");
+      xhr.setRequestHeader("Content-Type", "application/json");
 
-    xhr.onreadystatechange = function() {
-      if(this.status === 200 && this.readyState === 4) {
-        modal.show("Message sent!");
-      } else if(this.stats === 404) {
-        modal.show("Mesage not sent, try again later!");
+      xhr.onreadystatechange = function() {
+        if(this.status === 200 && this.readyState === 4) {
+          modal.show("Message sent!");
+          resolve();
+        } else if(this.stats === 404) {
+          modal.show("Mesage not sent, try again later!");
+          reject();
+        }
       }
-    }
 
-    xhr.send(JSON.stringify(mail));
+      xhr.send(JSON.stringify(mail));
+    });
   }
 
   return {

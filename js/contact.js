@@ -17,6 +17,13 @@ App.module.define("contact", ["dom", "mail"], function(dom, mail) {
     message: ""
   };
 
+  function emptyInputFields() {
+    $nameInput.value = "";
+    $emailInput.value = "";
+    $subjectInput.value = "";
+    $messageInput.value = "";
+  }
+
   function applyInvalidStyles(el, value) {
     if(!value.trim()) {
       el.style.border = "1px solid tomato";
@@ -65,7 +72,9 @@ App.module.define("contact", ["dom", "mail"], function(dom, mail) {
       // and find some API mail sending service
       // also show user some pop-up for letting
       // him know that message is sent
-      mail.send(message);
+      mail.send(message).then(function() {
+        emptyInputFields();
+      });
     }
   });
 

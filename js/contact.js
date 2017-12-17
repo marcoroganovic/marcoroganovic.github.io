@@ -24,7 +24,7 @@ App.module.define("contact", ["dom", "mail"], function(dom, mail) {
     $messageInput.value = "";
   }
 
-  function validateEmail(email) {
+  function validEmail(email) {
     var re = /^[a-z][a-zA-Z0-9_.]*(\.[a-zA-Z][a-zA-Z0-9_.]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$/;
     return re.test(email);
   }
@@ -54,7 +54,7 @@ App.module.define("contact", ["dom", "mail"], function(dom, mail) {
   });
 
   $emailInput.addEventListener(EVENT_NAMES, function(event) {
-    if(!validateEmail(event.target.value)) {
+    if(!validEmail(event.target.value)) {
       $emailInput.style.border = "1px solid tomato";
     } else {
       $emailInput.style.border = "none";
@@ -78,10 +78,6 @@ App.module.define("contact", ["dom", "mail"], function(dom, mail) {
     });
 
     if(validMessage) {
-      // should add validation for email
-      // and find some API mail sending service
-      // also show user some pop-up for letting
-      // him know that message is sent
       mail.send(message).then(function() {
         emptyInputFields();
       });

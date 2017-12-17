@@ -24,6 +24,11 @@ App.module.define("contact", ["dom", "mail"], function(dom, mail) {
     $messageInput.value = "";
   }
 
+  function validateEmail(email) {
+    var re = /^[a-z][a-zA-Z0-9_.]*(\.[a-zA-Z][a-zA-Z0-9_.]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$/;
+    return re.test(email);
+  }
+
   function applyInvalidStyles(el, value) {
     if(!value.trim()) {
       el.style.border = "1px solid tomato";
@@ -49,7 +54,12 @@ App.module.define("contact", ["dom", "mail"], function(dom, mail) {
   });
 
   $emailInput.addEventListener(EVENT_NAMES, function(event) {
-    updateFormInfo(event, "email");
+    if(!validateEmail(event.target.value)) {
+      $emailInput.style.border = "1px solid tomato";
+    } else {
+      $emailInput.style.border = "none";
+      message.email = event.target.value;
+    }
   });
 
   $subjectInput.addEventListener(EVENT_NAMES, function(event) {

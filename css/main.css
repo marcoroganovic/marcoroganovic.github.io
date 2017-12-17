@@ -26,19 +26,12 @@ p {
   font-weight: 300;
 }
 
-
-.error-input {
-  border: 1px solid tomato;
-}
-
 .border-divider {
   position: relative;
   background: transparent;
   border-left: 1440px solid #207be4;
   border-bottom: 100px solid transparent;
 }
-
-
 
 .row {
   display: flex;

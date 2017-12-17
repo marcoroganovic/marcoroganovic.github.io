@@ -291,7 +291,7 @@ header nav a {
   border-radius: 3px;
   padding: 10px;
   margin: 10px 0;
-  border: none;
+  border: 1px solid transparent;
   font-size: 14px;
 }
 

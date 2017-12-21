@@ -40,7 +40,7 @@ App.module.define("projects", ["dom"], function(dom) {
       setTimeout(function() {
         el.classList.add(ANIMATION_NAME);
         resolve();
-      }, 150);
+      }, 100);
     });
   }
 
@@ -50,7 +50,6 @@ App.module.define("projects", ["dom"], function(dom) {
       if(id !== ACTIVE_PROJECT) {
         var project = PROJECTS[id];
         ACTIVE_PROJECT = id;
-
         animateFeaturedProject($featuredProj).then(function() {
           $browserMockup.src = event.target.src;
           $projTitle.textContent = project.name;

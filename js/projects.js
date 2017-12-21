@@ -3,7 +3,7 @@ App.module.define("projects", ["dom"], function(dom) {
   var PROJECTS = {
     abago: {
       name: "abago.com",
-      description: "Platform for bookin flight tickets and soon hotels. It's a single page applicatin built using modern JavaScript libraries. Specifically React, Redux, React Router and webpack for code transpiling and module bundling.",
+      description: "Platform for booking flight tickets and soon hotels. It's a single page applicatin built using modern JavaScript libraries. Specifically React, Redux, React Router and webpack for code transpiling and module bundling.",
       link: "https://abago.com"
     },
 

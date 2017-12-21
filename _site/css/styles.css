@@ -453,7 +453,6 @@ header nav a {
 
 .blog-posts {
   margin: 0 0;
-  padding-top: 50px;
   padding-bottom: 0;
 }
 
@@ -480,11 +479,6 @@ header nav a {
 }
 
 .blog-post-meta p {
-}
-
-.blog-post-meta:hover p {
-  transition: transform .3s ease-in;
-  transform: translate(10px)
 }
 
 .bg-alternate .blog-post-separator {

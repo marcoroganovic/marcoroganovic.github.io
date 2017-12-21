@@ -59,6 +59,7 @@ code {
 }
 
 main {
+  position: relative;
   max-width: 1140px;
   width: 100%;
   min-height: 100vh;
@@ -93,8 +94,14 @@ header nav a {
   font-weight: 200;
 }
 
+#particles {
+  height: 480px;
+}
+
 #intro {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 80px;
   padding: 140px 30px;
   text-align: center;
 }

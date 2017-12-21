@@ -85,7 +85,7 @@ header {
 
 header nav a {
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 15px;
   padding: 0 10px;
   color: #a6a6a6;
   font-weight: 200;
@@ -414,6 +414,8 @@ header nav a {
 .blog-intro {
   padding: 50px 0;
   text-align: center;
+  opacity: 0;
+  transition: opacity .4s linear;
 }
 
 

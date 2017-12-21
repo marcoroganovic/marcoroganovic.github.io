@@ -157,6 +157,10 @@ header nav a {
   padding: 20px 30px;
 }
 
+#contact {
+  padding-bottom: 50px;
+}
+
 #about, #projets {
   padding-bottom: 50px;
 }
@@ -505,7 +509,7 @@ header nav a {
 
 
 .blog-post-meta-info {
-  padding: 50px 0;
+  padding: 50px 0 25px 0;
   text-align: center;
 }
 

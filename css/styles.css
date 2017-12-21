@@ -137,11 +137,18 @@ header nav a {
   border-bottom: 90px solid #f7f7f7;
 }
 
-.separator-left {
+.separator-left-inverted,
+.separator-right-inverted {
+  border-top: 90px solid #f7f7f7;
+}
+
+.separator-left,
+.separator-left-inverted {
   border-right: 570px solid transparent; 
 }
 
-.separator-right {
+.separator-right,
+.separator-right-inverted {
   border-left: 570px solid transparent;
 }
 

@@ -55,6 +55,7 @@ App.module.define("projects", ["dom"], function(dom) {
           $browserMockup.src = event.target.src;
           $projTitle.textContent = project.name;
           $projDesc.textContent = project.description;
+          $projDesc.innerHTML += "<br />";
           $projDesc.innerHTML += "<a class='ghost-btn' href='" + project.link + "' target='_blank'>Visit site</a>"
         });
       }

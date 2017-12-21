@@ -4,18 +4,21 @@ title: Blog | Marco Roganovic
 include_blog_script: true
 ---
 
-<div class="blog-intro">
+<section class="blog-intro">
   <h1>
     <img src="/images/pen.svg" />
     Recent posts
     </h1>
     <em>&quot;quote&quot;</em>
   <p>&mdash; author</p>
+</section>
+
+<div class="border-separator">
+  <div class="separator-left"></div>
+  <div class="separator-right"></div>
 </div>
 
-<!-- Blog intro end -->
-
-<div class="blog-posts">
+<section class="blog-posts">
 
   {% for post in paginator.posts %}
     {% assign post_modulo = forloop.index | modulo: 2 %}
@@ -38,12 +41,11 @@ include_blog_script: true
       </div>
     </div>
   {% endfor %}
-
-</div>
+</section>
 
 <!-- Blog posts end -->
 {% if paginator.total_posts > 6 %}
-<div class="blog-pagination bg-alternate">
+<section class="blog-pagination bg-alternate">
 
   <ul>
     {% for page in (1..paginator.total_pages) %}
@@ -55,5 +57,5 @@ include_blog_script: true
     {% endfor %}
   </ul>
 
-</div>
+</section>
 {% endif %}

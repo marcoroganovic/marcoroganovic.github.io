@@ -94,7 +94,7 @@ header nav a {
 }
 
 #particles {
-  height: 480px;
+  height: 450px;
 }
 
 #intro {
@@ -126,17 +126,23 @@ header nav a {
   margin-left: 49px;
 }
 
+.border-separator {
+  display: flex;
+  width: 100%;
+  height: 90px;
+}
 
-.separator-gradient {
-  position: absolute;
-  bottom: 0;
-  width: 110%;
-  height: 1px;
-  left: -20px;
-  background: #1c92d2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.separator-left,
+.separator-right {
+  border-bottom: 90px solid #f7f7f7;
+}
 
+.separator-left {
+  border-right: 570px solid transparent; 
+}
+
+.separator-right {
+  border-left: 570px solid transparent;
 }
 
 #about, #projects, #open-source, #contact {

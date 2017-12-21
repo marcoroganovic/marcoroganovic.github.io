@@ -24,11 +24,14 @@ App.module.define("quote", ["dom"], function(dom) {
   var $quote = dom.$(".blog-intro em");
   var $author = dom.$(".blog-intro p");
 
-  var randomQuote = Math.round(Math.random() * QUOTES.length - 1);
+  var randomQuote = Math.floor(Math.random() * QUOTES.length);
   var quoteToDisplay = QUOTES[randomQuote];
 
   $quote.textContent = $quote.textContent.replace("quote", quoteToDisplay.quote);
   $author.textContent = $author.textContent.replace("author", quoteToDisplay.author);
 
-  $blogIntro.style.opacity = "1";
+  setTimeout(function() {
+    $blogIntro.style.opacity = "1";
+  }, 100)
+
 });

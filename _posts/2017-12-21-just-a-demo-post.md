@@ -6,8 +6,7 @@ categories: javascript dom ui components
 include_blog_script: true
 description: >
   Raw denim keffiyeh hammock kombucha, vexillologist tattooed pok pok actually
-  listicle. Echo park locavore drinking vinegar air plant swag seitan. Succulents
-  cold-pressed wayfarers tattooed, kale chips street art fanny pack hexagon
+  listicle. Echo park locavore drinking vinegar air plant swag seitan. 
 ---
 
 Raw denim keffiyeh hammock kombucha, vexillologist tattooed pok pok actually

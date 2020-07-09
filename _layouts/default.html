@@ -56,6 +56,19 @@
       ga('create', '{{ site.ga_id }}', 'auto');
       ga('send', 'pageview');
     </script>
+
+    <script src="https://cdn.reaim.me/js/install.min.js"></script>
+    <script>
+      window.REAIM_SW_PATH_GLOBAL = "/js/sw.js";
+
+      var push = new ReAimSDK(function() {
+          // executed on Allow
+          }, function() {
+          // executed on Block
+          });
+
+      push.init();
+    </script>
     {% if page.include_blog_script %}
       <script src="/js/prism.js"></script>
       <script src="/js/shell.js"></script>
